@@ -34,18 +34,18 @@ body {
 }
 
 .screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
   width: 180px;
   height: 150px;
   border: 3px solid var(--borderColor);
   border-radius: 10px;
+  padding: 5px;
   background-color: var(--screenBackgroundColor);
+  overflow-y: scroll;
 }
 
 .text {
+  word-break: break-all;
   text-decoration: underline;
   letter-spacing: 1px;
 }
@@ -73,6 +73,13 @@ body {
 
 .button-last-row {
   height: 30px;
+}
+
+.x {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80px;
+  padding: 10px;
 }
 
 .digit {

@@ -6,85 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Old phone</title>
     <link rel="stylesheet" href="./style.css" />
-    <script defer src="./script.js"></script>
+    <script defer type="module" src="./js/app.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="screen">
         <!-- ! Remove this -->
-        <p class="text">asdas</p>
+        <p class="text"></p>
       </div>
       <div class="buttons">
-        <button class="button">1</button>
-        <button class="button">
-          <p class="digit">2</p>
-          <div class="letters">
-            <p class="letter">A</p>
-            <p class="letter">B</p>
-            <p class="letter">C</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">3</p>
-          <div class="letters">
-            <p class="letter">D</p>
-            <p class="letter">E</p>
-            <p class="letter">F</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">4</p>
-          <div class="letters">
-            <p class="letter">G</p>
-            <p class="letter">H</p>
-            <p class="letter">I</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">5</p>
-          <div class="letters">
-            <p class="letter">J</p>
-            <p class="letter">K</p>
-            <p class="letter">L</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">6</p>
-          <div class="letters">
-            <p class="letter">M</p>
-            <p class="letter">N</p>
-            <p class="letter">O</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">7</p>
-          <div class="letters">
-            <p class="letter">P</p>
-            <p class="letter">Q</p>
-            <p class="letter">R</p>
-            <p class="letter">S</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">8</p>
-          <div class="letters">
-            <p class="letter">T</p>
-            <p class="letter">U</p>
-            <p class="letter">V</p>
-          </div>
-        </button>
-        <button class="button">
-          <p class="digit">9</p>
-          <div class="letters">
-            <p class="letter">W</p>
-            <p class="letter">X</p>
-            <p class="letter">Y</p>
-            <p class="letter">Z</p>
-          </div>
-        </button>
-        <button class="button button-last-row">*</button>
-        <button class="button button-last-row">0</button>
-        <button class="button button-last-row">#</button>
+        <!-- TODO: Find way for creating line break inside button -->
+        <button class="button" data-keys="1">1</button>
+        <button class="button" data-keys="2ABC">2 ABC</button>
+        <button class="button" data-keys="3DEF">3 DEF</button>
+        <button class="button" data-keys="4GHI">4 GHI</button>
+        <button class="button" data-keys="5JKL">5 JKL</button>
+        <button class="button" data-keys="6MNO">6 MNO</button>
+        <button class="button" data-keys="7PQRS">7 PQRS</button>
+        <button class="button" data-keys="8TUV">8 TUV</button>
+        <button class="button" data-keys="9WXYZ">9 WXYZ</button>
+        <button class="button button-last-row" data-keys="*">*</button>
+        <button class="button button-last-row" data-keys="0">0</button>
+        <button class="button button-last-row" data-keys="#">#</button>
       </div>
     </div>
   </body>
