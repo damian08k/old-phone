@@ -71,15 +71,17 @@ body {
   cursor: pointer;
 }
 
-.button-last-row {
-  height: 30px;
+.button span:first-child {
+  display: inline-block;
+  width: 100%;
 }
 
-.x {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80px;
-  padding: 10px;
+.button span {
+  pointer-events: none;
+}
+
+.button-last-row {
+  height: 30px;
 }
 
 .digit {
